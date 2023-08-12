@@ -1,0 +1,17 @@
+{
+  "name": "thealexcode_cron-backuper",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Shiriakov Aleksandr <alcryalcry@gmail.com>",
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "dependencies": {
+    "cron": "2.4.0",
+    "dotenv-flow": "3.2.0",
+    "node-scp": "0.0.23"
+  }
+}

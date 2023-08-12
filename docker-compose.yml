@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  cron-backuper:
+    build: .
+    image: thealexcode/cron-backuper
+    restart: always
+    ports:
+      - 3333:80
+    env_file: ./.env
+    volumes:
+      - ${LOCAL_PATH_BACKUP_FOLDERS}:/app/backups
+      - ${LOCAL_PATH_PRIVATEKEY}:/app/.ssh/key
